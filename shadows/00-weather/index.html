@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>Weather</title>
+    <style type="text/css" media="all">
+      .sun, .snow, .blizzard {
+        width: 140px;
+        height: 180px;
+        float: left;
+        margin: 1px;
+      }
+
+      .sun:hover, .snow:hover, .blizzard:hover {
+        box-shadow: 0 0 10px #000;
+        -webkit-transition: 0.3s;
+        -moz-transition: 0.3s;
+        -ms-transition: 0.3s;
+        -o-transition: 0.3s;
+        transition: 0.3s;
+      }
+
+      .sun header, .snow header, .blizzard header {
+        background: #0097B9;
+        height: 30px;
+        font-size: 1.6em;
+        text-align: center;
+        color: #fff;
+        font-family: times;
+      }
+
+      .sun article, .snow article, .blizzard article {
+        width: 114px;
+        height: 94px;
+        margin: 0 auto;
+      }
+
+      .sun footer, .snow footer, .blizzard footer {
+        font-size: 2em;
+        text-align: center;
+        margin-top: 10px;
+        font-family: times;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="sun">
+      <header>31.08</header>
+      <article><img src="weather-sun.jpg"></article>
+      <footer>+20&deg;</footer>
+    </div>
+
+    <div class="snow">
+      <header>01.09</header>
+      <article><img src="weather-snow.jpg"></article>
+      <footer>-3&deg;</footer>
+    </div>
+
+    <div class="blizzard">
+      <header>02.09</header>
+      <article><img src="weather-blizzard.jpg"></article>
+      <footer>-10&deg;</footer>
+    </div>
+  </body>
+</html>
